@@ -1,0 +1,20 @@
+EVENT BINDING:
+**this comunication happens from template to logic(ts)/component class...
+1.We want our data to listen on particular events
+2.the logic(method) which we are writing inside our ts will get triggred from our template
+3.For event binding we use banana braces ()
+4.(event)="business logic(method)"
+  **on this particular event this method supposed to be executed
+5.template referance or local referance is something that holds the total input 
+  from input field
+   
+   <input type="text" #referanceName>
+   <button class="btn btn-primary" (click)="methodName(referanceName)">Add</button>
+   
+   $event holds each and every character of input field,one character at time
+   
+   <input type="text" (input)="methodName($event)">
+   
+6.What ever the input we enter into input field will get stored inside
+  
+  event.target.value
