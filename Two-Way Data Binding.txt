@@ -1,0 +1,6 @@
+TWO-WAY DATA BINDING:
+1.[()]="expression"
+2.combining property and event together
+3.by using ngModel
+
+  [(ngModel)]="expression";
