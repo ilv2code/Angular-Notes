@@ -18,3 +18,10 @@ EVENT BINDING:
 6.What ever the input we enter into input field will get stored inside
   
   event.target.value
+  
+7.$event is a kind of varible name in template when using event binding
+data emitted with that event
+
+**input and click are DOM events and they shift data when an event triggred
+
+ we pass this $event as argument to the method we are calling 
