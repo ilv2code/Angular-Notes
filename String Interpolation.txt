@@ -1,0 +1,28 @@
+DATA BINDING--INTERPOLATION:
+1.Dynamic way of outplacing(output) data
+2.Communication between Typescript code(business code) and template and vice versa.
+3.two ways:
+          string interpolation ---> {{}}
+		  property binding--->(property)=>"data"
+ **template is the thing user interacts 
+
+4.when clicking a button we want something to be triggred inside our ts code(then
+	getting other direction means a template to typescript code(business code)
+	 
+	 one way:
+	        Event Binding --->(event)="expression"
+5.We can combined both directions 
+		Two-Way-Binding:
+		           [(ngModel)]="data"	
+6.String Interpolation:
+        {{typescript expression}}
+		example :
+		{{title}}
+		  typescript expression can be a property
+		  
+		  **we can call a method which in turn returns a string 
+		  {{methodName()}}
+		  **we cannot write multi line expressions here or blocking code
+		    like if , for and like control ....
+			
+CONSTRUCTOR INSIDE A CLASS WORKS AS METHOD EXECUTER....

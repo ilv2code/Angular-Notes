@@ -1,0 +1,18 @@
+PROPERTY-BINDING:
+1.To make an functionality dynamic we keep properties inside angular braces.
+  
+    [property]="expression"
+	
+**Each HTMl element we use is parsed by the browser and kind of translated into
+  DOM and each element in DOM has couple of properties a lot of these can't even
+  be set through attributes on HTML element.
+**One of the main reasons we use Angular is that it can easily update dynamically
+
+We are binding native element property to our typescript property===>PROPERTY BINDING!
+
+    [native element property] = " Typescript propety(customized)"
+
+2.Once done with property binding and we want to output our binded functionality we simply make string interpolate
+  Instead of using string interpolation we are using property binding here
+
+  innerText property of an element is what just between the opening and closing tag
