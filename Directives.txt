@@ -1,0 +1,75 @@
+DIRECTIVES:
+1.Directives are instructions in DOM!
+2.Component are such kind of instructions in DOM!
+   As we place selector of our component some where in our template at this point 
+   of time we are instructing Angular to add the content of our component template 
+   and the business logic in our typescript code in this place where we use the selector.
+  **this was our instruction to angular to add our component in this place.
+  
+  Components are directives with template and we have directives without template.
+3.Custom directives 
+   we typically add directives with attribute selector but technically the directives
+   can be configured just like the selector of the component 
+4.we decorate our directive using "@Directive" to inform angular that this particular
+  class holds 
+  
+5.Built in directives:
+   
+   If we want to use something on a condition we are having a directive called
+    "ngIf" directive, it works like a If statement.
+	**ngIf is a structural directives means it changes the structure of DOM!
+   
+   Directives are added by attribute selector
+   
+   ** "*" at the begining indicates that its a structural directive..
+   
+6.Enhancing ngIf using else:
+   
+   we use "#" local reference and ng-template 
+    
+	"ng-template" is used to point a particular position is DOM...
+	
+	<p *ngIf="serverCreated; else anyName">Server was created! Name is {{serverName}}</p>
+	<ng-template #anyName>
+	<p>No Server Created!</p>
+	</ng-template>
+	
+7.Styling elements Dynamically using ngStyle:
+    
+	apart from structural directives we have other type of directives called
+	attribute directives these directives don't add or remove elements. They 
+	only change elements on which they are placed on...
+	**these directives dont require any star at the start
+	
+	we place ngStyle in an element
+	and we bind it using angular brace indication property binding
+	[ngStyle]="JavaScript Object"
+	[ngStyle]="{'stylename':'stylevalue'}"
+	styles are key value pairs we can place them between single quotes 
+	or we can use camel case
+	
+8.Applying CSS Classes Dynamically with ngClass:
+
+    ngClass allows us to dynamically add or remove CSS class
+	
+	<p [ngStyle]="{backgroundColor:getColor()}"
+	[ngClass]="{className:serverStatus === 'Online'}">
+	{{'Server'}} With ID {{serverId}} is {{getServerStatus()}}
+	</p>
+
+9.OutPutting List of ngFor:
+  
+  ngFor is a structural Directive which changes the structure of DOM!
+  Syntax:
+   *ngFor = "'variable declartion' of 'property we define in ts code'"
+   
+   the above statement loop through every element in array(property we defined)
+   and assign this each an every element to the variable we declared	 
+	
+  we and also get index number by just adding one more condition in ngFor
+  
+    *ngFor = "let variableName1 of Property ; let variableName2 of index"
+	
+	use the second variableName2 in conditions to get index value
+	
+ 
