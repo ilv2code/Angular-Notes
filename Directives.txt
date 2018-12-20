@@ -1,4 +1,4 @@
-DIRECTIVES:
+ DIRECTIVES:
 1.Directives are instructions in DOM!
 2.Component are such kind of instructions in DOM!
    As we place selector of our component some where in our template at this point 
@@ -8,8 +8,8 @@ DIRECTIVES:
   
   Components are directives with template and we have directives without template.
 3.Custom directives 
-   we typically add directives with attribute selector but technically the directives
-   can be configured just like the selector of the component 
+   we typically add directives with attribute selector("[]") but technically the 
+   directives can be configured just like the selector of the component 
 4.we decorate our directive using "@Directive" to inform angular that this particular
   class holds 
   
@@ -33,6 +33,8 @@ DIRECTIVES:
 	<ng-template #anyName>
 	<p>No Server Created!</p>
 	</ng-template>
+	**ng-template, ng-container and ng-content  are not DOM properties they are
+	angular properties... they dont get rendered!
 	
 7.Styling elements Dynamically using ngStyle:
     
