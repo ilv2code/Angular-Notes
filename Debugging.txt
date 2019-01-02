@@ -1,0 +1,13 @@
+DEBUGGING:
+***Typescript is not which runs in the browser, 
+   then how can we access typescript?????
+ so javascript bundles are used--as
+ javascript files support SOURCEMAPS(debugger source maps)( these are little 
+ addition to CLI which adds to our bundles which allowed browse to translate our 
+ javascript code to typescript or simply to map between these two)
+ 
+ 
+ 3ways to debug angular code:
+ 1.READING the ERROR message
+ 2.using SOURCEMAPS to debug
+ 3.using AUGURY to understand the application and dependencies
